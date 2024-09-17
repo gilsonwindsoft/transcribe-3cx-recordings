@@ -59,4 +59,4 @@ watcher.on('error', (error) => {
   console.error('Erro ao monitorar a pasta de gravações:', error);
 });
 
-console.log('Monitorando a pasta de gravações:', gravaçõesPath);
+console.log('Monitorando a pasta de gravações:', gravacoesPath);
