@@ -5,7 +5,7 @@ const path = require('path');
 require('dotenv').config(); // Carregar variáveis do arquivo .env
 
 // Caminho para a pasta de gravações
-const gravaçõesPath = path.join(__dirname, process.env.GRAVACOES_PATH);
+const gravaçõesPath = process.env.GRAVACOES_PATH;
 const webhookUrl = process.env.WEBHOOK_URL;
 const maxFileSize = 25 * 1024 * 1024; // 25 MB
 
