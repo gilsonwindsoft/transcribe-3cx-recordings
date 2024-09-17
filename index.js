@@ -20,9 +20,6 @@ const uploadFile = async (filePath) => {
       console.log(`Arquivo ${filePath} excede o tamanho máximo de 25 MB. Não será enviado.`);
       return;
     }
-
-    console.log(`Arquivo ${filePath} seria enviado aqui.`);
-    return;
   
     const response = await axios.post(webhookUrl, fileStream, {
       headers: {
